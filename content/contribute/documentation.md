@@ -98,11 +98,11 @@ Across all pages on the Hugo docs, the typical triple-back-tick markdown syntax 
 
 Your options for languages are `xml`/`html`, `go`/`golang`, `md`/`markdown`/`mkd`, `handlebars`, `apache`, `toml`, `yaml`, `json`, `css`, `asciidoc`, `ruby`, `powershell`/`ps`, `scss`, `sh`/`zsh`/`bash`/`git`, `http`/`https`, and `javascript`/`js`.
 
-```
-```
+~~~
+```html
 <h1>Hello world!</h1>
 ```
-```
+~~~
 
 ### Code Block Shortcode
 
@@ -142,7 +142,7 @@ This example HTML code block tells Hugo users the following:
 1. This file *could* live in `layouts/_default`, as demonstrated by `layouts/_default/single.html` as the value for `file`.
 2. This snippet is complete enough to be downloaded and implemented in a Hugo project, as demonstrated by `download="single.html"`.
 
-```
+~~~
 {{%/* code file="layouts/_default/single.html" download="single.html" */%}}
 ```
 {{ define "main" }}
@@ -164,7 +164,7 @@ This example HTML code block tells Hugo users the following:
 {{ end }}
 ```
 {{%/* /code */%}}
-```
+~~~
 
 ##### Example 'code' Display
 
@@ -194,14 +194,14 @@ The output of this example will render to the Hugo docs as follows:
 
 The `output` shortcode is almost identical to the `code` shortcode but only takes and requires `file`. The purpose of `output` is to show *rendered* HTML and therefore almost always follows another basic code block *or* and instance of the `code` shortcode:
 
-```
+~~~
 {{%/* output file="post/my-first-post/index.html" */%}}
 ```
 <h1>This is my First Hugo Blog Post</h1>
 <p>I am excited to be using Hugo.</p>
 ```
 {{%/* /output */%}}
-```
+~~~
 
 The preceding `output` example will render as follows to the Hugo docs:
 
